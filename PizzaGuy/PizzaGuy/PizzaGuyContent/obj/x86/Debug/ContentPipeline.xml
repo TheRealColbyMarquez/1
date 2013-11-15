@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>SpriteSheet.png</Source>
+      <Name>SpriteSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
+      <Time>2013-11-15T08:35:44.0244-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Pizzaguy.png</Source>
+      <Name>Pizzaguy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\Pizzaguy.xnb</Output>
+      <Time>2013-11-15T07:30:59.4594-05:00</Time>
+    </Item>
+    <Item>
+      <Source>PizzaGuyBackdrop.jpg</Source>
+      <Name>PizzaGuyBackdrop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\PizzaGuyBackdrop.xnb</Output>
+      <Time>2013-11-15T08:19:20.9564-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuyContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuyContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-04-18T11:24:14.1308-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

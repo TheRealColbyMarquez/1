@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaGuy", "PizzaGuy\PizzaGuy\PizzaGuy.csproj", "{9C6768ED-C59A-40B5-97C5-DF2B7CEFF8D5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PizzaGuyContent", "PizzaGuy\PizzaGuyContent\PizzaGuyContent.contentproj", "{F3E539A3-CA0D-496D-B719-7A73C9DA142C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C6768ED-C59A-40B5-97C5-DF2B7CEFF8D5}.Debug|x86.ActiveCfg = Debug|x86
+		{9C6768ED-C59A-40B5-97C5-DF2B7CEFF8D5}.Debug|x86.Build.0 = Debug|x86
+		{9C6768ED-C59A-40B5-97C5-DF2B7CEFF8D5}.Release|x86.ActiveCfg = Release|x86
+		{9C6768ED-C59A-40B5-97C5-DF2B7CEFF8D5}.Release|x86.Build.0 = Release|x86
+		{F3E539A3-CA0D-496D-B719-7A73C9DA142C}.Debug|x86.ActiveCfg = Debug|x86
+		{F3E539A3-CA0D-496D-B719-7A73C9DA142C}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
