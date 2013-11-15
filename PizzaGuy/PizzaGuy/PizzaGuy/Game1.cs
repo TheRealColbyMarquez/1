@@ -17,9 +17,10 @@ namespace PizzaGuy
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public SpriteBatch spriteBatch;
         PizzaGuy pizzaguy;
-        Texture2D Spritesheet;
+        EnemyShip enemyship;
+        public Texture2D Spritesheet;
 
 
         public Game1()
@@ -50,7 +51,7 @@ namespace PizzaGuy
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spritesheet = Content.Load<Texture2D>(@"SpriteSheet");
-
+            enemyship = new EnemyShip(new Vector2(0, 0), Spritesheet, new Rectangle(250, 200, 64, 64), Vector2.Zero);
             pizzaguy = new PizzaGuy(new Vector2(0, 0), Spritesheet, new Rectangle(360, 130, 55, 75), Vector2.Zero);
 
 
@@ -91,6 +92,11 @@ namespace PizzaGuy
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            enemyship.Draw(spriteBatch);
+            base.Draw(gameTime);
+            spriteBatch.End();
+
             spriteBatch.Begin();
             pizzaguy.Draw(spriteBatch);
             base.Draw(gameTime);

@@ -107,7 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyShip.cs" />
     <Compile Include="Pizzaguy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />

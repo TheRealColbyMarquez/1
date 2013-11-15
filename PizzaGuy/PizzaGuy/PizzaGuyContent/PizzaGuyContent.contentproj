@@ -49,13 +49,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pizzaguy.png">
-      <Name>Pizzaguy</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="PizzaGuyBackdrop.jpg">
       <Name>PizzaGuyBackdrop</Name>
       <Importer>TextureImporter</Importer>

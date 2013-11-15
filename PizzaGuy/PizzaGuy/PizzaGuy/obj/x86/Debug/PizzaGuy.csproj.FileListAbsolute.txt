@@ -7,3 +7,11 @@ C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\De
 C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\PizzaGuy.exe
 C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\PizzaGuy.pdb
 C:\Users\EAHS CS\Documents\GitHub\PizzaGuy\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\PizzaGuyBackdrop.xnb
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\SpriteSheet.xnb
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\PizzaGuyBackdrop.xnb
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\PizzaGuy.exe
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\PizzaGuy.pdb
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\PizzaGuy.exe
+C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\obj\x86\Debug\PizzaGuy.pdb
