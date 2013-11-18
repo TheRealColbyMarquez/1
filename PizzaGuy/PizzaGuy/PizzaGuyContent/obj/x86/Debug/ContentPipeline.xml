@@ -7,17 +7,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
-      <Time>2013-11-15T11:48:47.4264-05:00</Time>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
+      <Time>2013-11-18T08:25:24.5286-05:00</Time>
     </Item>
     <Item>
-      <Source>PizzaGuyBackdrop.jpg</Source>
-      <Name>PizzaGuyBackdrop</Name>
+      <Source>background.png</Source>
+      <Name>background</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\PizzaGuyBackdrop.xnb</Output>
-      <Time>2013-11-15T11:48:47.4234-05:00</Time>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-11-18T08:03:10.0566-05:00</Time>
+    </Item>
+    <Item>
+      <Source>pacmanghost.jpg</Source>
+      <Name>pacmanghost</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\pacmanghost.xnb</Output>
+      <Time>2013-11-18T08:45:44.8006-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +34,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuyContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuyContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuyContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuyContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

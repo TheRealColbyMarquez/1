@@ -19,8 +19,11 @@ namespace PizzaGuy
         GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         PizzaGuy pizzaguy;
-        EnemyShip enemyship;
+        Texture2D ghost;
         public Texture2D Spritesheet;
+        Texture2D background;
+        Rectangle mainFrame;
+        Vector2 mPosition = new Vector2(0, 0);
 
 
         public Game1()
@@ -49,11 +52,13 @@ namespace PizzaGuy
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spritesheet = Content.Load<Texture2D>(@"SpriteSheet");
-            enemyship = new EnemyShip(new Vector2(0, 0), Spritesheet, new Rectangle(250, 200, 64, 64), Vector2.Zero);
-            pizzaguy = new PizzaGuy(new Vector2(0, 0), Spritesheet, new Rectangle(360, 130, 55, 75), Vector2.Zero);
-
+            ghost = this.Content.Load<Texture2D>("pacmanghost");
+            pizzaguy = new PizzaGuy(new Vector2(0, 0), Spritesheet, new Rectangle(34, 286, 22, 22), Vector2.Zero);
+            mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
+            background = Content.Load<Texture2D>("background");
 
             // TODO: use this.Content to load your game content here
         }
@@ -83,6 +88,8 @@ namespace PizzaGuy
             base.Update(gameTime);
         }
 
+
+
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -90,16 +97,20 @@ namespace PizzaGuy
         protected override void Draw(GameTime gameTime)
         {
 
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
             // TODO: Add your drawing code here
+            //spriteBatch.Begin();
+            //spriteBatch.Draw(background, mainFrame, Color.Wheat);
+            //spriteBatch.End()
             spriteBatch.Begin();
-            enemyship.Draw(spriteBatch);
+            pizzaguy.Draw(spriteBatch);
             base.Draw(gameTime);
             spriteBatch.End();
 
             spriteBatch.Begin();
-            pizzaguy.Draw(spriteBatch);
-            base.Draw(gameTime);
+
+            spriteBatch.Draw(ghost, mPosition, Color.White);
+
             spriteBatch.End();
         }
     }
