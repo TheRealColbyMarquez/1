@@ -19,11 +19,9 @@ namespace PizzaGuy
         GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         PizzaGuy pizzaguy;
-        Texture2D ghost;
         public Texture2D Spritesheet;
         Texture2D background;
         Rectangle mainFrame;
-        Vector2 mPosition = new Vector2(0, 0);
 
 
         public Game1()
@@ -55,10 +53,7 @@ namespace PizzaGuy
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spritesheet = Content.Load<Texture2D>(@"SpriteSheet");
-            ghost = this.Content.Load<Texture2D>("pacmanghost");
             pizzaguy = new PizzaGuy(new Vector2(0, 0), Spritesheet, new Rectangle(34, 286, 22, 22), Vector2.Zero);
-            mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
-            background = Content.Load<Texture2D>("background");
 
             // TODO: use this.Content to load your game content here
         }
@@ -105,12 +100,6 @@ namespace PizzaGuy
             spriteBatch.Begin();
             pizzaguy.Draw(spriteBatch);
             base.Draw(gameTime);
-            spriteBatch.End();
-
-            spriteBatch.Begin();
-
-            spriteBatch.Draw(ghost, mPosition, Color.White);
-
             spriteBatch.End();
         }
     }
