@@ -21,24 +21,30 @@ namespace PizzaGuy
     {
         public Direction direction;
         public Vector2 target;
+        public xTile.Layers.Layer map;
         public float speed = 120;
 
         public PizzaGuy(
             Vector2 location,
             Texture2D texture,
             Rectangle initialFrame,
-            Vector2 velocity) :
+            Vector2 velocity,
+            xTile.Layers.Layer map) :
 
             base(location, texture, initialFrame, velocity)
         {
             direction = Direction.RIGHT;
             target = location;
+            this.map = map;
 
             UpdateDirection();
         }
 
         public void UpdateDirection()
         {
+            Vector2 oldtarget = target;
+            float oldRotation = Rotation;
+
             switch (direction)
             {
                 case Direction.LEFT:
@@ -73,6 +79,13 @@ namespace PizzaGuy
 
                     break;
             }
+
+            if (map.Tiles[(int)target.X / 32, (int)target.Y / 32] != null)
+            {
+                target = location;
+                velocity = Vector2.Zero;
+                Rotation = oldRotation;
+            }
         }
 
         public override void Update(GameTime gameTime)
@@ -102,7 +115,8 @@ namespace PizzaGuy
             if (velocity.X > 0 && location.X >= target.X ||
                 velocity.X < 0 && location.X <= target.X ||
                 velocity.Y > 0 && location.Y >= target.Y ||
-                velocity.Y < 0 && location.Y <= target.Y)
+                velocity.Y < 0 && location.Y <= target.Y ||
+                velocity == Vector2.Zero)
             {
                 location = target;
 

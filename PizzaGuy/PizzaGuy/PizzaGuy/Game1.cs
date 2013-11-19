@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using xTile;
+using xTile.Display;
+using xTile.Tiles;
 
 namespace PizzaGuy
 {
@@ -22,11 +25,16 @@ namespace PizzaGuy
         public Texture2D Spritesheet;
         Texture2D background;
         Rectangle mainFrame;
-
+        Map map;
+        IDisplayDevice xnaDisplayDevice;
+        xTile.Dimensions.Rectangle viewport;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+
+            IsMouseVisible = true;
+            
             Content.RootDirectory = "Content";
         }
 
@@ -39,6 +47,9 @@ namespace PizzaGuy
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            xnaDisplayDevice = new xTile.Display.XnaDisplayDevice(Content, GraphicsDevice);
+            viewport = new xTile.Dimensions.Rectangle(new xTile.Dimensions.Size(this.Window.ClientBounds.Width, this.Window.ClientBounds.Height));
 
             base.Initialize();
         }
@@ -53,7 +64,13 @@ namespace PizzaGuy
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spritesheet = Content.Load<Texture2D>(@"SpriteSheet");
-            pizzaguy = new PizzaGuy(new Vector2(0, 0), Spritesheet, new Rectangle(34, 286, 22, 22), Vector2.Zero);
+            
+            map = Content.Load<Map>("Map1");
+            map.LoadTileSheets(xnaDisplayDevice);
+
+
+
+            pizzaguy = new PizzaGuy(new Vector2(32, 32), Spritesheet, new Rectangle(0, 350, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"));
 
             // TODO: use this.Content to load your game content here
         }
@@ -78,6 +95,12 @@ namespace PizzaGuy
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            MouseState ms = Mouse.GetState();
+            int index = map.TileSheets[0].GetTileIndex(new xTile.Dimensions.Location(ms.X, ms.Y));
+            Tile tile = map.GetLayer("untitled layer").Tiles[1, 1];
+
+            Window.Title = index.ToString();
+
             // TODO: Add your update logic here
             pizzaguy.Update(gameTime);
             base.Update(gameTime);
@@ -93,6 +116,9 @@ namespace PizzaGuy
         {
 
             GraphicsDevice.Clear(Color.Black);
+
+            map.Draw(xnaDisplayDevice, viewport);
+
             // TODO: Add your drawing code here
             //spriteBatch.Begin();
             //spriteBatch.Draw(background, mainFrame, Color.Wheat);
