@@ -28,3 +28,6 @@ C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Cont
 C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\breakout.xnb
 C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\Map1.xnb
 C:\Users\EAHSCS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\xTile.dll
+C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\breakout.xnb
+C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\Map1.xnb
+C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\xTile.dll

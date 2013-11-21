@@ -23,8 +23,6 @@ namespace PizzaGuy
         public SpriteBatch spriteBatch;
         PizzaGuy pizzaguy;
         public Texture2D Spritesheet;
-        Texture2D background;
-        Rectangle mainFrame;
         Map map;
         IDisplayDevice xnaDisplayDevice;
         xTile.Dimensions.Rectangle viewport;
@@ -70,7 +68,7 @@ namespace PizzaGuy
 
 
 
-            pizzaguy = new PizzaGuy(new Vector2(32, 32), Spritesheet, new Rectangle(0, 350, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"));
+            pizzaguy = new PizzaGuy(new Vector2(32, 32), Spritesheet, new Rectangle(300, 300, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"));
 
             // TODO: use this.Content to load your game content here
         }
