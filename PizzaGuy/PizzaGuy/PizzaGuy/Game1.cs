@@ -22,6 +22,7 @@ namespace PizzaGuy
         GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         PizzaGuy pizzaguy;
+        Ghost ghost;
         public Texture2D Spritesheet;
         Map map;
         IDisplayDevice xnaDisplayDevice;
@@ -69,6 +70,7 @@ namespace PizzaGuy
 
 
             pizzaguy = new PizzaGuy(new Vector2(32, 32), Spritesheet, new Rectangle(300, 300, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"));
+            ghost = new Ghost(new Vector2(32, 32*10), Spritesheet, new Rectangle(300, 300, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"), pizzaguy);
 
             // TODO: use this.Content to load your game content here
         }
@@ -101,6 +103,8 @@ namespace PizzaGuy
 
             // TODO: Add your update logic here
             pizzaguy.Update(gameTime);
+            ghost.Update(gameTime);
+
             base.Update(gameTime);
         }
 
@@ -123,6 +127,7 @@ namespace PizzaGuy
             //spriteBatch.End()
             spriteBatch.Begin();
             pizzaguy.Draw(spriteBatch);
+            ghost.Draw(spriteBatch);
             base.Draw(gameTime);
             spriteBatch.End();
         }
