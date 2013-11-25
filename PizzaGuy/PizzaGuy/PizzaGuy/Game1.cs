@@ -27,13 +27,14 @@ namespace PizzaGuy
         Map map;
         IDisplayDevice xnaDisplayDevice;
         xTile.Dimensions.Rectangle viewport;
+        private static Song menuMusic;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
 
             IsMouseVisible = true;
-            
+
             Content.RootDirectory = "Content";
         }
 
@@ -63,10 +64,10 @@ namespace PizzaGuy
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spritesheet = Content.Load<Texture2D>(@"SpriteSheet");
-            
             map = Content.Load<Map>("Map1");
+            menuMusic = Content.Load<Song>("introMusic");
             map.LoadTileSheets(xnaDisplayDevice);
-
+            MediaPlayer.Play(menuMusic);
 
 
             pizzaguy = new PizzaGuy(new Vector2(32, 32), Spritesheet, new Rectangle(300, 300, 32, 32), Vector2.Zero, map.GetLayer("untitled layer"));
@@ -79,6 +80,7 @@ namespace PizzaGuy
         /// UnloadContent will be called once per game and is the place to unload
         /// all content.
         /// </summary>
+        /// 
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here

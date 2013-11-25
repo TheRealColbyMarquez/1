@@ -13,6 +13,7 @@ namespace PizzaGuy
         Random rand = new Random();
         public float timer = 0f;
         public PizzaGuy pacman;
+        public Ghost ghost;
 
         public Ghost(
             Vector2 location,
@@ -44,6 +45,11 @@ namespace PizzaGuy
 
                 while (!CanMove(newDirection))
                     newDirection = (Direction)rand.Next(0, 5);
+
+                //if(pacman.Location == )
+                //{
+                //    pacman.Location = new Vector2(500,500);
+                //}
             }
 
             base.Update(gameTime);
