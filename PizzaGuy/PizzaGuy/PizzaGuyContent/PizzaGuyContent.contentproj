@@ -59,13 +59,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pacmanghost.jpg">
-      <Name>pacmanghost</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Map1.tide">
       <Name>Map1</Name>
       <Importer>TideImporter</Importer>
