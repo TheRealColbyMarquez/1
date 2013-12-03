@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
-      <Time>2013-11-25T11:51:41.8636-05:00</Time>
+      <Time>2013-12-03T07:39:58.0074-05:00</Time>
     </Item>
     <Item>
       <Source>background.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2013-11-25T11:51:41.8656-05:00</Time>
+      <Time>2013-12-03T07:39:58.0104-05:00</Time>
     </Item>
     <Item>
       <Source>breakout.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\breakout.xnb</Output>
-      <Time>2013-11-25T11:51:41.8686-05:00</Time>
+      <Time>2013-12-03T07:39:58.0134-05:00</Time>
     </Item>
     <Item>
       <Source>Map1.tide</Source>
@@ -35,10 +35,10 @@
       <Processor>TideProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\Map1.xnb</Output>
-      <Time>2013-11-25T11:51:41.8426-05:00</Time>
+      <Time>2013-12-03T07:39:58.0034-05:00</Time>
       <Dependency>
         <Key>breakout.png</Key>
-        <Value>2013-11-25T11:51:41.8686-05:00</Value>
+        <Value>2013-12-03T07:39:58.0134-05:00</Value>
       </Dependency>
       <Request>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\breakout.xnb</Request>
     </Item>
@@ -50,7 +50,7 @@
       <Options>None</Options>
       <Output>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\introMusic.xnb</Output>
       <Extra>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\PizzaGuy\bin\x86\Debug\Content\introMusic.wma</Extra>
-      <Time>2013-11-25T11:56:23.4156-05:00</Time>
+      <Time>2013-12-03T07:39:58.0164-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -66,7 +66,7 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Users\EAHS CS\Documents\GitHub\1\PizzaGuy\PizzaGuy\xTile.Pipeline.dll</Key>
-        <Value>2013-11-25T11:51:41.8846-05:00</Value>
+        <Value>2013-12-03T07:39:58.0324-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
